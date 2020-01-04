@@ -41,15 +41,15 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-                    switch (tab.getText().toString()){
+                    switch (tab.getPosition()){
 
-                        case "Login":
+                        case 0:
 
                             getSupportFragmentManager().beginTransaction().replace(R.id.container, mLoginFragment).commit();
 
                             break;
 
-                        case "signup":
+                        case 1:
                             getSupportFragmentManager().beginTransaction().replace(R.id.container, mSignUpFragment).commit();
                                 break;
 
